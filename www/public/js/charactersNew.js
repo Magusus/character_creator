@@ -14,11 +14,11 @@ $(document).ready(function(){
                 
                 $('#strength').val(data['strength']);
                 $('#agility').val(data['agility']);
-                $('#resisntace').val(data['resistance']);
+                $('#resistance').val(data['resistance']);
                 $('#mindfullness').val(data['mindfullness']);
                 
                 $('#intelligence').val(data['intelligence']);
-                $('#widsom').val(data['wisdom']);
+                $('#wisdom').val(data['wisdom']);
                 $('#intuition').val(data['intuition']);
                 $('#charisma').val(data['charisma']);
             }
