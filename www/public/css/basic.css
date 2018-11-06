@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 21, 2018, 5:40:16 PM
+    Author     : User
+*/
+
+#loginForm {
+    max-width: 500px;
+    margin: auto;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.margin-left {
+    margin-left: 10px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.card-header {
+    text-align: center;
+}
+
+button a, button a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+fieldset.actions {
+    border: lightgrey solid thin;
+    padding: 10px;
+}
+
+fieldset.actions legend {
+    width: 60px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.btn-action {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: #e6e6e6;
+    border: #e6e6e6 medium solid;
+    color: black;
+}
+
+.btn-action:hover {
+    background-color: white; /* Green */
+    border: #e6e6e6 medium solid;
+    color: black;
+}

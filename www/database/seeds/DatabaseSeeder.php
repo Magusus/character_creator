@@ -1,0 +1,22 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        Eloquent::unguard();
+        
+        $this->call('RaceTableSeeder');
+        $this->call('ProfessionTableSeeder');
+        $this->call('AbilityTableSeeder');
+        $this->call('ItemTableSeeder');
+        $this->call('CharacterTableSeeder');
+    }
+}
