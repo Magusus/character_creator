@@ -17,6 +17,5 @@ class DatabaseSeeder extends Seeder
         $this->call('ProfessionTableSeeder');
         $this->call('AbilityTableSeeder');
         $this->call('ItemTableSeeder');
-        $this->call('CharacterTableSeeder');
     }
 }

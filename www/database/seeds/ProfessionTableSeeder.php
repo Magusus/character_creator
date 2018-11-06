@@ -273,200 +273,219 @@ class ProfessionTableSeeder extends Seeder
             
             'description' => "Zlodějina je velice populárním povoláním snad na všech světech a ve všech říších. Zloději se dají dále rozdělovat do mnoha profesí a specializací, ale to hlavní mají společné. Jejich cílem je přivlastnit si co nejvíce z majetku někoho jiného. Většinou vystupují na venek jako neúspěšní obchodníci nebo učedníci a sluhové."
         ]);
-        /*Profession::create([
-            'name' => '',
-            'experience_points' => ,
-            'attributes' => ,
+        Profession::create([
+            'name' => 'Sailin',
+            'experience_points' => 230,
+            'attributes' => 3,
             
-            'strength' => ,
-            'agility' => ,
-            'resistance' => ,
-            'mindfullness' => ,
-            'intelligence' => ,
-            'wisdom' => ,
-            'charisma' => ,
+            'strength' => -2,
+            'agility' => 2,
+            'resistance' => -2,
+            'mindfullness' => 2,
+            'intelligence' => 0,
+            'wisdom' => 0,
+            'charisma' => 0,
             
-            'description' => ""
+            'description' => "Sailinové se věnují magickému zlodějství. Od vykrádání měšců telekinezí až po odemykání zámků magií, všechny zlodějské profese dokáží bez problému provozovat tak, jak se o tom obyčejným zlodějům ani nesnilo. Mezi zlodějskými cechy jsou velmi výtáni, mágové na ně ale vypisují odměny a jakýkoliv sailin by se od nich měl držet dál."
         ]);
         Profession::create([
-            'name' => '',
-            'experience_points' => ,
-            'attributes' => ,
+            'name' => 'Vrah',
+            'experience_points' => 200,
+            'attributes' => 3,
             
-            'strength' => ,
-            'agility' => ,
-            'resistance' => ,
-            'mindfullness' => ,
-            'intelligence' => ,
-            'wisdom' => ,
-            'charisma' => ,
+            'strength' => -1,
+            'agility' => 2,
+            'resistance' => -3,
+            'mindfullness' => 2,
+            'intelligence' => 0,
+            'wisdom' => 0,
+            'charisma' => 0,
             
-            'description' => ""
+            'description' => "Sailinové se věnují magickému zlodějství. Od vykrádání měšců telekinezí až po odemykání zámků magií, všechny zlodějské profese dokáží bez problému provozovat tak, jak se o tom obyčejným zlodějům ani nesnilo. Mezi zlodějskými cechy jsou velmi výtáni, mágové na ně ale vypisují odměny a jakýkoliv sailin by se od nich měl držet dál."
         ]);
         Profession::create([
-            'name' => '',
-            'experience_points' => ,
-            'attributes' => ,
+            'name' => 'Stínový bojovník',
+            'experience_points' => 230,
+            'attributes' => 3,
             
-            'strength' => ,
-            'agility' => ,
-            'resistance' => ,
-            'mindfullness' => ,
-            'intelligence' => ,
-            'wisdom' => ,
-            'charisma' => ,
+            'strength' => -2,
+            'agility' => 3,
+            'resistance' => -2,
+            'mindfullness' => 2,
+            'intelligence' => -1,
+            'wisdom' => 0,
+            'charisma' => 0,
             
-            'description' => ""
+            'description' => "V podstatě se jedná o vraha, který většinou nezabíjí pro peníze, ale je naprosto nezávislý a někdy se dokonce dá na dráhu dobrodruha. Jejich cíle většinou nejsou jasné nikomu kromě jich samotných a tak jsou všeobecně považováni za velmi nedůvěryhodné."
+        ]);
+        
+        //Adventurers
+        Profession::create([
+            'name' => 'Hraničář',
+            'experience_points' => 240,
+            'attributes' => 3,
+            
+            'strength' => 1,
+            'agility' => 1,
+            'resistance' => 1,
+            'mindfullness' => 1,
+            'intelligence' => -1,
+            'wisdom' => 1,
+            'charisma' => -1,
+            
+            'description' => "Hraničáři jsou všeobecně považováni za temné a mlčenlivé poutníky, ale to platí jenom o některých z nich. Všeobecně jsou to ale samotáři nebo ti, kdož mají raději přírodu a klid než ruch měst a velkých říši. Když se jim zachce, dokáží být ale výbornými vypravěči a společníky."
         ]);
         Profession::create([
-            'name' => '',
-            'experience_points' => ,
-            'attributes' => ,
+            'name' => 'Dobrodruh',
+            'experience_points' => 220,
+            'attributes' => 4,
             
-            'strength' => ,
-            'agility' => ,
-            'resistance' => ,
-            'mindfullness' => ,
-            'intelligence' => ,
-            'wisdom' => ,
-            'charisma' => ,
+            'strength' => 0,
+            'agility' => 0,
+            'resistance' => 1,
+            'mindfullness' => 0,
+            'intelligence' => 1,
+            'wisdom' => -1,
+            'charisma' => 0,
             
-            'description' => ""
+            'description' => "Dobrodruhem se v podstatě stává každý, kdo vymění pohodlný a jistý život ve městě nebo na vesnici za nejistou budoucnost v cizích zemích nebo v divočině. V družině dobrodruhů najdete nejrůznější existence, od umělců a básníků, přes studenty, až po trestance a psance."
         ]);
         Profession::create([
-            'name' => '',
-            'experience_points' => ,
-            'attributes' => ,
+            'name' => 'Bard',
+            'experience_points' => 200,
+            'attributes' => 3,
             
-            'strength' => ,
-            'agility' => ,
-            'resistance' => ,
-            'mindfullness' => ,
-            'intelligence' => ,
-            'wisdom' => ,
-            'charisma' => ,
+            'strength' => -1,
+            'agility' => 2,
+            'resistance' => -1,
+            'mindfullness' => 0,
+            'intelligence' => 1,
+            'wisdom' => -2,
+            'charisma' => 2,
             
-            'description' => ""
+            'description' => "Jedná se o povolání příbuzné s dobrodruhem. Bardi jsou zpěváci a současně skladatelé písní a příběhů, takže jsou všude vítáni, i když nejsou považováni za nijak důvěryhodné. Velice často bardi vyrážejí za dobrodružstvím, ale vždy s družinou několika přátel."
+        ]);
+        
+        //Paladins and priests
+        Profession::create([
+            'name' => 'Irtanhelův paladin',
+            'experience_points' => 250,
+            'attributes' => 4,
+            
+            'strength' => 0,
+            'agility' => -1,
+            'resistance' => 1,
+            'mindfullness' => -1,
+            'intelligence' => 1,
+            'wisdom' => 1,
+            'charisma' => 1,
+            
+            'description' => "Klasický paladin bojující za spravedlnost a slávu svého řádu je právě paladinem boha cti a pravdy irtanhela. Tento řád se nachází po celém světě a jeho členové jsou vždy připraveni chránit ostatní a nasadit vlastní život v boji proti silám zla a temnoty. I přesto, že řád je občas napadán služebníky jiných bohů a označován za mocichtivý spolek, těší se důvěře a podpoře mnoha říší i prostých obyvatel."
         ]);
         Profession::create([
-            'name' => '',
-            'experience_points' => ,
-            'attributes' => ,
+            'name' => 'Mirthusův paladin',
+            'experience_points' => 250,
+            'attributes' => 4,
             
-            'strength' => ,
-            'agility' => ,
-            'resistance' => ,
-            'mindfullness' => ,
-            'intelligence' => ,
-            'wisdom' => ,
-            'charisma' => ,
+            'strength' => 2,
+            'agility' => 1,
+            'resistance' => 2,
+            'mindfullness' => 0,
+            'intelligence' => 0,
+            'wisdom' => -1,
+            'charisma' => -1,
             
-            'description' => ""
+            'description' => "Mirthus, bůh války a dobrodruhů, získal svůj řád relativně nedávno. Jeho příslušníci jsou vlastně válečníci bojující na všech bitevních polích světa proti silám Baala a jeho temných služebníků. Nejsou nijak oblíbení, ale znají mnoho neuvěřitelných příběhů a legend."
         ]);
         Profession::create([
-            'name' => '',
-            'experience_points' => ,
-            'attributes' => ,
+            'name' => 'Glaedrusův paladin',
+            'experience_points' => 250,
+            'attributes' => 3,
             
-            'strength' => ,
-            'agility' => ,
-            'resistance' => ,
-            'mindfullness' => ,
-            'intelligence' => ,
-            'wisdom' => ,
-            'charisma' => ,
+            'strength' => -1,
+            'agility' => 0,
+            'resistance' => -1,
+            'mindfullness' => 0,
+            'intelligence' => 1,
+            'wisdom' => 2,
+            'charisma' => 1,
             
-            'description' => ""
+            'description' => "Bojovník – mág, to je služebník boha Glaedra, boha magie. Řád se v posledních desetiletích těší velké oblibě a díky dobrým vztahům a vzájemnému vypomáhání s řádem irtanhelových paladinů získal i podporu od vládců několika mocných říší."
         ]);
         Profession::create([
-            'name' => '',
-            'experience_points' => ,
-            'attributes' => ,
+            'name' => 'Temnonoš',
+            'experience_points' => 250,
+            'attributes' => 4,
             
-            'strength' => ,
-            'agility' => ,
-            'resistance' => ,
-            'mindfullness' => ,
-            'intelligence' => ,
-            'wisdom' => ,
-            'charisma' => ,
+            'strength' => 0,
+            'agility' => 1,
+            'resistance' => 0,
+            'mindfullness' => 2,
+            'intelligence' => 0,
+            'wisdom' => 1,
+            'charisma' => -1,
             
-            'description' => ""
+            'description' => "Temnonoši jsou pravým opakem irtanhelových paladinů. Jsou to služebníci boha tyranie Baala, jejichž motivy zůstávají většinou zahaleny rouškou temných tajemství. Neví se o nich mnoho, jen to, že mají na svědomí mnoho mrtvých či záhadně zmizelých. "
         ]);
         Profession::create([
-            'name' => '',
-            'experience_points' => ,
-            'attributes' => ,
+            'name' => 'Paladin chaosu',
+            'experience_points' => 250,
+            'attributes' => 4,
             
-            'strength' => ,
-            'agility' => ,
-            'resistance' => ,
-            'mindfullness' => ,
-            'intelligence' => ,
-            'wisdom' => ,
-            'charisma' => ,
+            'strength' => 3,
+            'agility' => -1,
+            'resistance' => 2,
+            'mindfullness' => 1,
+            'intelligence' => -1,
+            'wisdom' => 0,
+            'charisma' => -1,
             
-            'description' => ""
+            'description' => "Další ze služebníků Temné trojice, tentokrát boha ohně a chaosu Eflehriga. Není úplně jisté, o co těmto paladinům vlastně jde, jisté ale je, že vedou válku s glaedrovými paladiny a spolupracují s temnonoši."
         ]);
         Profession::create([
-            'name' => '',
-            'experience_points' => ,
-            'attributes' => ,
+            'name' => 'Smrtonoš',
+            'experience_points' => 250,
+            'attributes' => 4,
             
-            'strength' => ,
-            'agility' => ,
-            'resistance' => ,
-            'mindfullness' => ,
-            'intelligence' => ,
-            'wisdom' => ,
-            'charisma' => ,
+            'strength' => 0,
+            'agility' => 1,
+            'resistance' => 0,
+            'mindfullness' => 1,
+            'intelligence' => 2,
+            'wisdom' => 1,
+            'charisma' => -1,
             
-            'description' => ""
+            'description' => "Toto je služebník boha smrti, Řádu. Většinou bývá zasvěcen v chrámu, který se nachází na místě, kam rozhodně není snadné se dostat, hlavně uprostřed pouště nebo dokonce pod vodou. Jeho úkol je jasný – zabít ty, kteří smrti nějakým způsobem unikli a za to získat dlouhověkost nebo dokonce podobu licha."
         ]);
         Profession::create([
-            'name' => '',
-            'experience_points' => ,
-            'attributes' => ,
+            'name' => 'Ldorthina kněžka',
+            'experience_points' => 250,
+            'attributes' => 3,
             
-            'strength' => ,
-            'agility' => ,
-            'resistance' => ,
-            'mindfullness' => ,
-            'intelligence' => ,
-            'wisdom' => ,
-            'charisma' => ,
+            'strength' => -2,
+            'agility' => 1,
+            'resistance' => -1,
+            'mindfullness' => 1,
+            'intelligence' => 2,
+            'wisdom' => 0,
+            'charisma' => 0,
             
-            'description' => ""
+            'description' => "Kněžky bohyně utrpení Ldorth šíří víru po světě především utrpením nevěřících. Ve své domovině, v Podříši, jsou velmi vážené a nikdo se neodvažuje zpochybnit jejich rozhodnutí. Jsou to schopné kouzelnice i bojovnice na blízko, ale téměř vždy se jedná o noční tredosky."
         ]);
         Profession::create([
-            'name' => '',
-            'experience_points' => ,
-            'attributes' => ,
+            'name' => 'Selinina kněžka',
+            'experience_points' => 150,
+            'attributes' => 3,
             
-            'strength' => ,
-            'agility' => ,
-            'resistance' => ,
-            'mindfullness' => ,
-            'intelligence' => ,
-            'wisdom' => ,
-            'charisma' => ,
+            'strength' => -2,
+            'agility' => 1,
+            'resistance' => -1,
+            'mindfullness' => 1,
+            'intelligence' => 0,
+            'wisdom' => 2,
+            'charisma' => 2,
             
-            'description' => ""
+            'description' => "Řád Selininých kněžek sloužící Selině, bohyni lásky a milosrdenství, je paradoxně dobře znám hlavně u armád. Tam, hlavně mezi vojáky znechucenými krveprolitím, šíří slova lásky a především jsou to výborné léčitelky. Zásadně odmítají zbraně a zbroj, některé jsou ale praktičtěji založené a tak v bitevní vřavě nějakou tu zbroj nosí."
         ]);
-        Profession::create([
-            'name' => '',
-            'experience_points' => ,
-            'attributes' => ,
-            
-            'strength' => ,
-            'agility' => ,
-            'resistance' => ,
-            'mindfullness' => ,
-            'intelligence' => ,
-            'wisdom' => ,
-            'charisma' => ,
-            
-            'description' => ""
-        ]);*/
     }
 }
