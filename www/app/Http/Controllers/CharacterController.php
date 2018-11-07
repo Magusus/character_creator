@@ -7,8 +7,6 @@ use App\Race;
 use App\Profession;
 use Illuminate\Http\Request;
 
-use App\Rules\ExistsRace;
-
 class CharacterController extends Controller
 {
     private $characters;
@@ -63,7 +61,7 @@ class CharacterController extends Controller
             $arr['charisma'] += $profession->charisma;
         }
         
-        $arr['exp'] = round($level * 1.75 * $exp + $exp);
+        $arr['exp'] = round(pow(1.75,$level) * $exp);
         
         return response()->json($arr);
     }
