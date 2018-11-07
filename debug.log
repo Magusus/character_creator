@@ -2568,3 +2568,153 @@
 - 12:36:29.234 INFO: Ended application
 - 12:36:29.234 INFO: --------------------------------------------------------
 >>>>>>> THEIRS
+- 12:14:18.172 INFO: --------------------------------------------------------
+- 12:14:18.187 INFO: Started application
+- 12:14:18.187 INFO: Logging to: D:\Tools\laragon\www\character_creator\debug.log
+- 12:14:18.187 INFO: Log level = DEBUG4
+- 12:14:18.187 INFO: Starting Mongoose 3.9c web server
+- 12:14:18.187 INFO: WWW directory: D:\Tools\laragon\www\character_creator\www\public
+- 12:14:18.187 INFO: Index files: index.html,index.php
+- 12:14:18.187 INFO: CGI interpreter: D:\Tools\laragon\www\character_creator\php\php-cgi.exe
+- 12:14:18.187 INFO: CGI pattern: **.php$
+- 12:14:18.187 INFO: Hide files patterns: 
+- 12:14:18.187 INFO: CGI environment variables set: TMP=C:\Users\User\AppData\Local\Temp\,TEMP=C:\Users\User\AppData\Local\Temp\,TMPDIR=C:\Users\User\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 12:14:18.203 INFO: Web server url: http://127.0.0.1:63613/
+- 12:14:18.218 INFO: remote_debugging_port = 57986
+- 12:14:18.328 DEBUG: Command line string for the browser process: "D:\Tools\laragon\www\character_creator\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="D:\Tools\laragon\www\character_creator\debug.log" --remote-debugging-port=57986
+- 12:14:20.000 DEBUG: Command line string for the gpu-process process: "D:\Tools\laragon\www\character_creator\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="D:\Tools\laragon\www\character_creator\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x10de --gpu-device-id=0x1c82 --gpu-driver-vendor=NVIDIA --gpu-driver-version=24.21.13.9924 --gpu-driver-date=9-5-2018 --lang=en-US --log-file="D:\Tools\laragon\www\character_creator\debug.log" --service-request-channel-token=E5BE3C7665E3AD14555E84CEC3FBE2A2 --mojo-platform-channel-handle=1876 /prefetch:2
+- 12:14:21.890 DEBUG: App::OnContextInitialized()
+- 12:14:21.890 DEBUG: Window max width/height = 1840/992
+- 12:14:21.890 DEBUG: GetBrowserWindow(): not found, hwnd = 329272
+- 12:14:21.890 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 12:14:21.937 DEBUG: BrowserWindow::CreateBrowserControl()
+- 12:14:21.937 DEBUG: StoreBrowserWindow(): hwnd = 329272
+[1107/121421.430:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 12:14:21.390 DEBUG: ClientHandler::OnAfterCreated()
+- 12:14:21.390 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 12:14:21.500 DEBUG: OnLoadingStateChange: loading=1, url=
+- 12:14:21.000 DEBUG: Command line string for the renderer process: "D:\Tools\laragon\www\character_creator\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=A4126C339E86D294DC02F16F285972F2 --lang=en-US --lang=en-US --log-file="D:\Tools\laragon\www\character_creator\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=A4126C339E86D294DC02F16F285972F2 --renderer-client-id=3 --mojo-platform-channel-handle=2300 /prefetch:1
+- 12:14:22.812 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:22.890 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:22.937 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:22.047 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:22.156 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:22.265 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:22.375 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:22.484 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:23.593 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:23.703 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:23.250 DEBUG: OnBrowserCreated()
+- 12:14:23.812 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:23.922 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:23.031 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:23.140 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+[1107/121423.557:ERROR:connection.cc(1947)] Cookie sqlite error 26, errno 0: file is encrypted or is not a database, sql: PRAGMA auto_vacuum
+[1107/121423.558:ERROR:connection.cc(1947)] Cookie sqlite error 26, errno 0: file is encrypted or is not a database, sql: PRAGMA journal_mode = TRUNCATE
+[1107/121423.558:ERROR:connection.cc(1947)] Cookie sqlite error 26, errno 0: file is encrypted or is not a database, sql: SELECT name FROM sqlite_master WHERE type=? AND name=? COLLATE NOCASE
+[1107/121423.558:ERROR:connection.cc(1947)] Cookie sqlite error 26, errno 0: file is encrypted or is not a database, sql: SELECT name FROM sqlite_master WHERE type=? AND name=? COLLATE NOCASE
+[1107/121423.558:ERROR:connection.cc(1947)] Cookie sqlite error 26, errno 0: file is encrypted or is not a database, sql: CREATE TABLE meta(key LONGVARCHAR NOT NULL UNIQUE PRIMARY KEY, value LONGVARCHAR)
+- 12:14:23.359 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:23.468 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+[1107/121423.953:ERROR:block_files.cc(492)] Invalid file version or magic D:\Tools\laragon\www\character_creator\webcache\Cache\data_0
+- 12:14:23.578 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:24.687 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:24.797 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:24.906 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:24.015 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:24.125 DEBUG: GetBrowserWindow(): not found, hwnd = 329420
+- 12:14:27.828 INFO: GET 200 /
+- 12:14:27.187 INFO: GET 200 /js/app.js
+- 12:14:27.766 DEBUG: OnContextCreated()
+- 12:14:27.328 INFO: GET 200 /css/basic.css
+- 12:14:27.359 INFO: GET 200 /css/app.css
+- 12:14:28.250 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:63613/
+- 12:14:35.672 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:63613/
+- 12:14:35.031 INFO: GET 200 /characters/create
+- 12:14:35.516 DEBUG: OnContextCreated()
+- 12:14:35.078 INFO: GET 200 /js/charactersNew.js
+- 12:14:36.656 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:63613/characters/create
+- 12:14:36.765 INFO: POST 200 /characters/getStats
+- 12:17:20.593 DEBUG: F12 pressed, opening developer tools
+- 12:17:20.609 DEBUG: ClientHandler::OnAfterCreated()
+- 12:17:20.609 DEBUG: GetBrowserWindow(): not found, hwnd = 1836696
+- 12:17:20.609 DEBUG: BrowserWindow::BrowserWindow() created for Popup
+- 12:17:20.609 DEBUG: StoreBrowserWindow(): hwnd = 1836696
+- 12:17:20.625 DEBUG: Centering popup window relative to its parent
+- 12:17:20.640 DEBUG: OnLoadingStateChange: loading=1, url=
+- 12:17:20.000 DEBUG: Command line string for the renderer process: "D:\Tools\laragon\www\character_creator\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=66301B137340963C8C8510B1920B457B --lang=en-US --lang=en-US --log-file="D:\Tools\laragon\www\character_creator\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=66301B137340963C8C8510B1920B457B --renderer-client-id=4 --mojo-platform-channel-handle=3456 /prefetch:1
+- 12:17:20.031 DEBUG: OnBrowserCreated()
+- 12:17:20.062 DEBUG: OnContextCreated()
+- 12:17:20.015 DEBUG: OnLoadingStateChange: loading=0, url=chrome-devtools://devtools/inspector.html
+- 12:17:30.031 DEBUG: OnBeforeClose() hwnd=1836696
+- 12:17:30.031 DEBUG: RemoveBrowserWindow(): hwnd = 1836696
+- 12:17:30.375 DEBUG: OnBrowserDestroyed()
+- 12:19:03.859 DEBUG: WM_DESTROY
+- 12:19:03.859 DEBUG: RemoveBrowserWindow(): hwnd = 329272
+- 12:19:03.859 INFO: Stopping Mongoose web server
+- 12:19:03.859 DEBUG: Mongoose webserver stopped immediately
+- 12:19:03.859 DEBUG: OnBeforeClose() hwnd=656978
+- 12:19:03.875 DEBUG: RemoveBrowserWindow(): hwnd = 656978
+- 12:19:03.875 DEBUG: GetBrowserWindow(): not found, hwnd = 656978
+- 12:19:03.875 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 12:19:03.875 DEBUG: Calling CefQuitMessageLoop()
+- 12:19:03.359 DEBUG: OnBrowserDestroyed()
+- 12:19:03.000 INFO: Ended application
+- 12:19:03.000 INFO: --------------------------------------------------------
+- 18:45:52.094 INFO: --------------------------------------------------------
+- 18:45:52.094 INFO: Started application
+- 18:45:52.094 INFO: Logging to: D:\Tools\laragon\www\character_creator\debug.log
+- 18:45:52.094 INFO: Log level = DEBUG4
+- 18:45:52.094 INFO: Starting Mongoose 3.9c web server
+- 18:45:52.094 INFO: WWW directory: D:\Tools\laragon\www\character_creator\www\public
+- 18:45:52.094 INFO: Index files: index.html,index.php
+- 18:45:52.094 INFO: CGI interpreter: D:\Tools\laragon\www\character_creator\php\php-cgi.exe
+- 18:45:52.094 INFO: CGI pattern: **.php$
+- 18:45:52.094 INFO: Hide files patterns: 
+- 18:45:52.094 INFO: CGI environment variables set: TMP=C:\Users\User\AppData\Local\Temp\,TEMP=C:\Users\User\AppData\Local\Temp\,TMPDIR=C:\Users\User\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 18:45:53.094 INFO: Web server url: http://127.0.0.1:60096/
+- 18:45:53.109 INFO: remote_debugging_port = 55927
+- 18:45:53.109 DEBUG: Command line string for the browser process: "D:\Tools\laragon\www\character_creator\phpdesktop-chrome.exe" --no-sandbox --lang=en-US --log-file="D:\Tools\laragon\www\character_creator\debug.log" --remote-debugging-port=55927
+- 18:45:53.172 DEBUG: App::OnContextInitialized()
+- 18:45:53.172 DEBUG: Window max width/height = 1840/992
+- 18:45:53.172 DEBUG: GetBrowserWindow(): not found, hwnd = 132142
+- 18:45:53.172 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 18:45:53.172 DEBUG: BrowserWindow::CreateBrowserControl()
+- 18:45:53.172 DEBUG: StoreBrowserWindow(): hwnd = 132142
+- 18:45:53.219 DEBUG: ClientHandler::OnAfterCreated()
+- 18:45:53.219 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 18:45:53.234 DEBUG: OnLoadingStateChange: loading=1, url=
+- 18:45:53.000 DEBUG: Command line string for the gpu-process process: "D:\Tools\laragon\www\character_creator\phpdesktop-chrome.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="D:\Tools\laragon\www\character_creator\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x10de --gpu-device-id=0x1c82 --gpu-driver-vendor=NVIDIA --gpu-driver-version=24.21.13.9924 --gpu-driver-date=9-5-2018 --lang=en-US --log-file="D:\Tools\laragon\www\character_creator\debug.log" --service-request-channel-token=2455A6615E3345C8BFB5458C837BD342 --mojo-platform-channel-handle=1708 /prefetch:2
+- 18:45:53.000 DEBUG: Command line string for the renderer process: "D:\Tools\laragon\www\character_creator\phpdesktop-chrome.exe" --type=renderer --no-sandbox --primordial-pipe-token=42ED658460E1C86674EC778D9BFD0764 --lang=en-US --lang=en-US --log-file="D:\Tools\laragon\www\character_creator\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=42ED658460E1C86674EC778D9BFD0764 --renderer-client-id=3 --mojo-platform-channel-handle=2260 /prefetch:1
+- 18:45:53.047 DEBUG: OnBrowserCreated()
+[1107/184554.109:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 18:45:57.265 DEBUG: OnContextCreated()
+- 18:45:57.281 INFO: GET 200 /
+- 18:45:57.297 INFO: GET 200 /css/basic.css
+- 18:45:57.297 INFO: GET 200 /css/loader.css
+- 18:45:57.297 INFO: GET 200 /css/app.css
+- 18:45:57.297 INFO: GET 200 /js/app.js
+- 18:45:57.328 INFO: GET 200 /js/ajaxSetup.js
+- 18:45:57.594 INFO: GET 200 /svg/loader.svg
+- 18:45:57.641 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:60096/
+- 18:46:01.453 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:60096/
+- 18:46:01.718 DEBUG: OnContextCreated()
+- 18:46:01.734 INFO: GET 200 /characters/create
+- 18:46:01.734 INFO: GET 304 /css/loader.css
+- 18:46:01.797 INFO: GET 200 /js/charactersNew.js
+- 18:46:01.984 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:60096/characters/create
+- 18:46:02.266 INFO: POST 200 /characters/getStats
+- 18:46:04.109 INFO: POST 200 /characters/getStats
+- 18:46:08.188 INFO: POST 200 /characters/getStats
+- 18:46:09.906 DEBUG: WM_DESTROY
+- 18:46:09.906 DEBUG: RemoveBrowserWindow(): hwnd = 132142
+- 18:46:09.906 INFO: Stopping Mongoose web server
+- 18:46:09.906 DEBUG: Mongoose webserver stopped immediately
+- 18:46:09.922 DEBUG: OnBeforeClose() hwnd=132294
+- 18:46:09.922 DEBUG: RemoveBrowserWindow(): hwnd = 132294
+- 18:46:09.922 DEBUG: GetBrowserWindow(): not found, hwnd = 132294
+- 18:46:09.922 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 18:46:09.922 DEBUG: Calling CefQuitMessageLoop()
+- 18:46:09.906 DEBUG: OnBrowserDestroyed()
+- 18:46:10.250 INFO: Ended application
+- 18:46:10.250 INFO: --------------------------------------------------------

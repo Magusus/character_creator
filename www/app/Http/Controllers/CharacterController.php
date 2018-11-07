@@ -7,6 +7,8 @@ use App\Race;
 use App\Profession;
 use Illuminate\Http\Request;
 
+use App\Rules\ExistsRace;
+
 class CharacterController extends Controller
 {
     private $characters;
@@ -20,22 +22,48 @@ class CharacterController extends Controller
     }
     
     public function ajaxLoadStats(Request $request) {
-        $race = $this->races->find($request->race);
-        $profession = $this->professions->find($request->profession);
         $level = $request->level -1;
+        $exp = 0;
+            
+        $arr['strength'] = 0;
+        $arr['agility'] = 0;
+        $arr['resistance'] = 0;
+        $arr['mindfullness'] = 0;
+
+        $arr['intelligence'] = 0;
+        $arr['wisdom'] = 0;
+        $arr['intuition'] = 0;
+        $arr['charisma'] = 0;
         
-        $exp = $race->experience_points + $profession->experience_points;
+        if ($race = $this->races->find($request->race)) {
+            $exp += $race->experience_points;
+            
+            $arr['strength'] += $race->strength;
+            $arr['agility'] += $race->agility;
+            $arr['resistance'] += $race->resistance;
+            $arr['mindfullness'] += $race->mindfullness;
+
+            $arr['intelligence'] += $race->intelligence;
+            $arr['wisdom'] += $race->wisdom;
+            $arr['intuition'] += $race->intuition;
+            $arr['charisma'] += $race->charisma;
+        }
+        
+        if ($profession = $this->professions->find($request->profession)) {
+            $exp += $profession->experience_points;
+            
+            $arr['strength'] += $profession->strength;
+            $arr['agility'] += $profession->agility;
+            $arr['resistance'] += $profession->resistance;
+            $arr['mindfullness'] += $profession->mindfullness;
+
+            $arr['intelligence'] += $profession->intelligence;
+            $arr['wisdom'] += $profession->wisdom;
+            $arr['intuition'] += $profession->intuition;
+            $arr['charisma'] += $profession->charisma;
+        }
+        
         $arr['exp'] = round($level * 1.75 * $exp + $exp);
-        
-        $arr['strength'] = $race->strength + $profession->strength;
-        $arr['agility'] = $race->agility + $profession->agility;
-        $arr['resistance'] = $race->resistance + $profession->resistance;
-        $arr['mindfullness'] = $race->mindfullness + $profession->mindfullness;
-        
-        $arr['intelligence'] = $race->intelligence + $profession->intelligence;
-        $arr['wisdom'] = $race->wisdom + $profession->wisdom;
-        $arr['intuition'] = $race->intuition + $profession->intuition;
-        $arr['charisma'] = $race->charisma + $profession->charisma;
         
         return response()->json($arr);
     }
@@ -65,11 +93,11 @@ class CharacterController extends Controller
         return view('characters.new', compact('races', 'professions'));
     }
     
-    public function createSave(Request $request) {
+    public function createSave(Request $request) {     
         $request->validate([
             'name' => ['required', 'string'],
-            'race' => ['required', 'string'],
-            'profession' => ['required', 'string'],
+            'race' => ['required', 'numeric', 'exists:races,id'],
+            'profession' => ['required', 'numeric', 'exists:professions,id'],
             
             'level' => ['required', 'numeric', 'min:1', 'max:100'],
             'experience_points' => ['required', 'string'],
@@ -96,14 +124,11 @@ class CharacterController extends Controller
             
             'description' => ['nullable']
         ]);
-
-        $race = $this->races->where('name', $request->race)->first();
-        $profession = $this->professions->where('name', $request->profession)->first();
         
         $character = new Character;
         $character->name = $request->name;
-        $character->race_id = $race->id;
-        $character->profession_id = $profession->id;
+        $character->race_id = $request->race;
+        $character->profession_id = $request->profession;
         
         $character->level = $request->level;
         $character->experience_points = $request->experience_points;
@@ -112,14 +137,14 @@ class CharacterController extends Controller
         $character->stamina_points = $request->stamina_points;
         $character->mana_points = $request->mana_points;
         
-        $character->strength = $request->strength + $race->strength + $profession->strength;
-        $character->agility = $request->agility + $race->agility + $profession->agility;
-        $character->resistance = $request->resistance + $race->resistance + $profession->resistance;
-        $character->mindfullness = $request->mindfullness + $race->mindfullness + $profession->mindfullness;
-        $character->intelligence = $request->intelligence + $race->intelligence + $profession->intelligence;
-        $character->wisdom = $request->wisdom + $race->wisdom + $profession->wisdom;
-        $character->intuition = $request->intuition + $race->intuition + $profession->intuition;
-        $character->charisma = $request->charisma + $race->charisma + $profession->charisma;
+        $character->strength = $request->strength;
+        $character->agility = $request->agility;
+        $character->resistance = $request->resistance;
+        $character->mindfullness = $request->mindfullness;
+        $character->intelligence = $request->intelligence;
+        $character->wisdom = $request->wisdom;
+        $character->intuition = $request->intuition;
+        $character->charisma = $request->charisma;
         
         $character->age = $request->age;
         $character->height = $request->height;

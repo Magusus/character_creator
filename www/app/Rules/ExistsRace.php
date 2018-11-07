@@ -2,10 +2,13 @@
 
 namespace App\Rules;
 
+use App\Race;
 use Illuminate\Contracts\Validation\Rule;
 
-class Secret implements Rule
+class ExistsRace implements Rule
 {
+    private $races;
+    
     /**
      * Create a new rule instance.
      *
@@ -13,7 +16,7 @@ class Secret implements Rule
      */
     public function __construct()
     {
-        //
+        $this->races = Race::all();
     }
 
     /**
@@ -25,7 +28,7 @@ class Secret implements Rule
      */
     public function passes($attribute, $value)
     {
-        return $value === env('REGISTER_SECRET', '');
+        return $this->races->where('name', $value)->first();
     }
 
     /**
@@ -35,6 +38,6 @@ class Secret implements Rule
      */
     public function message()
     {
-        return trans('validation.secret');
+        return 'Unknown race.';
     }
 }

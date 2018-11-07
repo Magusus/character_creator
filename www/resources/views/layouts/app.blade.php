@@ -16,6 +16,7 @@
         <!-- Scripts -->
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ asset('js/ajaxSetup.js') }}" defer></script>
 
         <!-- Fonts -->
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -24,6 +25,7 @@
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link rel='stylesheet' href="{{ asset('css/basic.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/loader.css') }}">
 
         @yield('assets')
     </head>
@@ -62,5 +64,7 @@
                 <!--empty-->
             </footer>
         </div>
+        
+        <div class="loader"></div>
     </body>
 </html>
