@@ -24,7 +24,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <input id="name" type="text" class="form-control{{ $errors->has('name')? ' is-invalid': ''}}" name="name" required>
+                        <input id="name" type="text" class="form-control{{ $errors->has('name')? ' is-invalid': ''}}" name="name" value="{{ old('name') }}" required>
                         @if ($errors->has('name'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('name') }}</strong>
@@ -34,7 +34,7 @@
                     <td>
                         <select id="race" class="form-control{{ $errors->has('race')? ' is-invalid': ''}}" name="race" required>
                             @foreach($races as $race)
-                            <option value="{{ $race->id }}">{{ $race->name }}</option>
+                                <option value="{{ $race->id }}">{{ $race->name }}</option>
                             @endforeach
                         </select>
                         @if ($errors->has('race'))
@@ -166,7 +166,12 @@
                     <tbody>
                         <tr>
                             <td>
-                                <input id="level" type="number" class="form-control{{ $errors->has('level') ? ' is-invalid' : '' }}" name="level" min="1" max="100" value="1">
+                                @if (old('level'))
+                                    <input id="level" type="number" class="form-control{{ $errors->has('level') ? ' is-invalid' : '' }}" name="level" min="1" max="100" value="{{ old('level') }}">
+                                @else
+                                    <input id="level" type="number" class="form-control{{ $errors->has('level') ? ' is-invalid' : '' }}" name="level" min="1" max="100" value="1">
+                                @endif
+                                
                                 @if ($errors->has('level'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('level') }}</strong>
@@ -239,7 +244,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <input id="age" type="text" class="form-control{{ $errors->has('age') ? ' is-invalid' : '' }}" name="age">
+                        <input id="age" type="text" class="form-control{{ $errors->has('age') ? ' is-invalid' : '' }}" name="age" value="{{ old('age') }}">
                         @if ($errors->has('age'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('age') }}</strong>
@@ -247,7 +252,7 @@
                         @endif
                     </td>
                     <td>
-                        <input id="height" type="text" class="form-control{{ $errors->has('height') ? ' is-invalid' : '' }}" name="height">
+                        <input id="height" type="text" class="form-control{{ $errors->has('height') ? ' is-invalid' : '' }}" name="height" value="{{ old('height') }}">
                         @if ($errors->has('height'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('height') }}</strong>
@@ -255,7 +260,7 @@
                         @endif
                     </td>
                     <td>
-                        <input id="weight" type="text" class="form-control{{ $errors->has('weight') ? ' is-invalid' : '' }}" name="weight">
+                        <input id="weight" type="text" class="form-control{{ $errors->has('weight') ? ' is-invalid' : '' }}" name="weight" value="{{ old('weight') }}">
                         @if ($errors->has('weight'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('weight') }}</strong>
@@ -263,7 +268,7 @@
                         @endif
                     </td>
                     <td>
-                        <input id="eye_color" type="text" class="form-control{{ $errors->has('eye_color') ? ' is-invalid' : '' }}" name="eye_color">
+                        <input id="eye_color" type="text" class="form-control{{ $errors->has('eye_color') ? ' is-invalid' : '' }}" name="eye_color" value="{{ old('eye_color') }}">
                         @if ($errors->has('eye_color'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('eye_color') }}</strong>
@@ -271,7 +276,7 @@
                         @endif
                     </td>
                     <td>
-                        <input id="hair_color" type="text" class="form-control{{ $errors->has('hair_color') ? ' is-invalid' : '' }}" name="hair_color">
+                        <input id="hair_color" type="text" class="form-control{{ $errors->has('hair_color') ? ' is-invalid' : '' }}" name="hair_color" value="{{ old('hair_color') }}">
                         @if ($errors->has('hair_color'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('hair_color') }}</strong>
@@ -279,7 +284,7 @@
                         @endif
                     </td>
                     <td>
-                        <input id="body_color" type="text" class="form-control{{ $errors->has('body_color') ? ' is-invalid' : '' }}" name="body_color">
+                        <input id="body_color" type="text" class="form-control{{ $errors->has('body_color') ? ' is-invalid' : '' }}" name="body_color" value="{{ old('body_color') }}">
                         @if ($errors->has('body_color'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('body_color') }}</strong>
@@ -299,7 +304,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <textarea id="description" type="text" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" name="description"></textarea>
+                        <textarea id="description" type="text" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" name="description">{{ old('description') }}</textarea>
                         @if ($errors->has('description'))
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $errors->first('description') }}</strong>
